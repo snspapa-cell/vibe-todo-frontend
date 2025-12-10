@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api/todos';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 // 할일 전체 조회
 export async function fetchTodos() {
